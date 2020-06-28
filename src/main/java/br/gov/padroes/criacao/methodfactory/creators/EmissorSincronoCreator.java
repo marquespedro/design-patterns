@@ -1,7 +1,7 @@
 package br.gov.padroes.criacao.methodfactory.creators;
 
-import br.gov.padroes.criacao.methodfactory.Emissor;
-import br.gov.padroes.criacao.methodfactory.EmissorSincronoEmail;
+import br.gov.padroes.criacao.methodfactory.emissor.Emissor;
+import br.gov.padroes.criacao.methodfactory.emissor.EmissorSincronoEmail;
 
 public class EmissorSincronoCreator extends EmissorCreator {
 

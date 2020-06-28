@@ -1,4 +1,4 @@
-package br.gov.padroes.criacao.methodfactory;
+package br.gov.padroes.criacao.methodfactory.emissor;
 
 /**
  * @author pedro

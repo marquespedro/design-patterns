@@ -1,9 +1,9 @@
-package br.gov.padroes.criacao.abstractFactory.factorys;
+package br.gov.padroes.criacao.abstractfactory.factory;
 
-import br.gov.padroes.criacao.abstractFactory.emissor.EmissorMensagem;
-import br.gov.padroes.criacao.abstractFactory.emissor.creator.EmissorMensagemCreator;
-import br.gov.padroes.criacao.abstractFactory.receptors.ReceptorMensagem;
-import br.gov.padroes.criacao.abstractFactory.receptors.ReceptorMensagemCreator;
+import br.gov.padroes.criacao.abstractfactory.emissores.EmissorMensagem;
+import br.gov.padroes.criacao.abstractfactory.emissores.EmissorMensagemCreator;
+import br.gov.padroes.criacao.abstractfactory.receptores.ReceptorMensagem;
+import br.gov.padroes.criacao.abstractfactory.receptores.ReceptorMensagemCreator;
 
 public class VisaComunicadorFactory implements ComunicadorFactory {
 

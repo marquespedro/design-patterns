@@ -1,8 +1,8 @@
 package br.gov.padroes.criacao.methodfactory.creators;
 
-import br.gov.padroes.criacao.methodfactory.Emissor;
-import br.gov.padroes.criacao.methodfactory.EmissorEmail;
-import br.gov.padroes.criacao.methodfactory.EmissorSMS;
+import br.gov.padroes.criacao.methodfactory.emissor.Emissor;
+import br.gov.padroes.criacao.methodfactory.emissor.EmissorEmail;
+import br.gov.padroes.criacao.methodfactory.emissor.EmissorSMS;
 
 /**
  * @author pedro

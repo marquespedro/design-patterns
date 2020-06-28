@@ -1,12 +1,12 @@
 package br.gov.padroes.criacao.methodfactory.creators;
 
-import br.gov.padroes.criacao.methodfactory.Emissor;
-import br.gov.padroes.criacao.methodfactory.EmissorAssincronoJMS;
-import br.gov.padroes.criacao.methodfactory.EmissorAssincronoSMS;
+import br.gov.padroes.criacao.methodfactory.emissor.Emissor;
+import br.gov.padroes.criacao.methodfactory.emissor.EmissorAssincronoJMS;
+import br.gov.padroes.criacao.methodfactory.emissor.EmissorAssincronoSMS;
 
 /**
  * @author pedro
- * Representa uma outra especiaização de creator onde é sobrescrito o metodo
+ * Representa uma outra especializacao de EmissorCreator onde é sobrescrito o metodo
  * de criacao de EmissorCreator
  */
 public class EmissorAssincronoCreator extends EmissorCreator {

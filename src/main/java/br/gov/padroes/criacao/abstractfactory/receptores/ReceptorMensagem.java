@@ -1,4 +1,4 @@
-package br.gov.padroes.criacao.abstractFactory.receptors;
+package br.gov.padroes.criacao.abstractfactory.receptores;
 
 public interface ReceptorMensagem {
 

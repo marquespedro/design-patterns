@@ -1,6 +1,6 @@
-package br.gov.padroes.criacao.abstractFactory.receptors;
+package br.gov.padroes.criacao.abstractfactory.receptores;
 
-import br.gov.padroes.criacao.abstractFactory.factorys.ComunicadorFactory;
+import br.gov.padroes.criacao.abstractfactory.factory.ComunicadorFactory;
 
 public class ReceptorMensagemCreator {
 
