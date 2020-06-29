@@ -2,9 +2,11 @@ package br.gov.padroes.criacao.builder;
 
 import java.util.Calendar;
 
+import br.gov.padroes.criacao.builder.boleto.Boleto;
+
 /**
  * @author pedro
- *Interface que define os passos para a criação de um produto.
+ *Interface que define os passos para a criação de um objeto.
  */
 public interface BoletoBuilder {
 

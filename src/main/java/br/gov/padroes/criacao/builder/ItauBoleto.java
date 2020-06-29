@@ -2,6 +2,8 @@ package br.gov.padroes.criacao.builder;
 
 import java.util.Calendar;
 
+import br.gov.padroes.criacao.builder.boleto.Boleto;
+
 public class ItauBoleto implements Boleto {
 
 	private String sacado;

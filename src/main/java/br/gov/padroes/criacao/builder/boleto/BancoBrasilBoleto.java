@@ -1,4 +1,4 @@
-package br.gov.padroes.criacao.builder;
+package br.gov.padroes.criacao.builder.boleto;
 
 import java.util.Calendar;
 

@@ -1,5 +1,8 @@
 package br.gov.padroes.criacao.builder;
 
+import br.gov.padroes.criacao.builder.boleto.BancoBrasilBoletoBuilder;
+import br.gov.padroes.criacao.builder.boleto.Boleto;
+
 public class TestarBoletoBuilder {
 
 	public static void main(String[] args) {

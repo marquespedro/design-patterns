@@ -10,6 +10,8 @@ import br.gov.padroes.criacao.methodfactory.emissor.Emissor;
  * O padrão Mehtod Factory basicamente é um metodo que retorna um tipo de objeto, 
  * dado um contexto.
  * 
+ * 
+ * 
  */
 public class TestaMethodFactory {
 

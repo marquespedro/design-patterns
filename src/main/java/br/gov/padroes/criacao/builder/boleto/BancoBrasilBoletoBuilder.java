@@ -1,6 +1,8 @@
-package br.gov.padroes.criacao.builder;
+package br.gov.padroes.criacao.builder.boleto;
 
 import java.util.Calendar;
+
+import br.gov.padroes.criacao.builder.BoletoBuilder;
 
 public class BancoBrasilBoletoBuilder implements BoletoBuilder {
 

@@ -2,6 +2,8 @@ package br.gov.padroes.criacao.builder;
 
 import java.util.Calendar;
 
+import br.gov.padroes.criacao.builder.boleto.Boleto;
+
 /**
  * @author pedro
  *Aciona os método de um Builder para construir um produto.
