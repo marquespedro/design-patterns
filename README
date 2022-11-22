@@ -1,0 +1,7 @@
+Os padrões de projeto são separadas em grupos 
+
+	- criacionais (Builder,Factory Method, Abstract Factory, Singleton etc)
+
+	- comportamentais (Strategy, Observer, Template Method, Mediator, Iterator, Chain of Responsibility etc)
+
+	- estruturais (Adapter, Bridge, Composite, Decorator, Flyweight, Proxy etc )
