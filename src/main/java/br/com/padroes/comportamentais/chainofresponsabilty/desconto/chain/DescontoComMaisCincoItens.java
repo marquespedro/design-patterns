@@ -17,11 +17,17 @@ public class DescontoComMaisCincoItens  extends Desconto {
 	}
 
 
+	/**
+	 * Tempalte Method o template do metodo e definido na classe Desconto metodo calcular
+	 */
 	@Override
 	public boolean atendeRegraDesconto(Orcamento orcamento) {		
 		return orcamento.getQuantidadeItens() > 5;
 	}
 
+	/**
+	 * Tempalte Method o template do metodo e definido na classe Desconto metodo calcular
+	 */
 	@Override
 	public BigDecimal efetuarCalculo(Orcamento orcamento) {
 		return orcamento.getValor().multiply(new BigDecimal("0.1"));
