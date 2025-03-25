@@ -1,7 +1,5 @@
 package br.com.padroes.comportamentais.chainofresponsabilty.desconto.chain;
 
-import java.math.BigDecimal;
-
 import br.com.padroes.comportamentais.chainofresponsabilty.desconto.Desconto;
 import br.com.padroes.comportamentais.strategy.loja.orcamento.Orcamento;
 
@@ -11,9 +9,9 @@ import br.com.padroes.comportamentais.strategy.loja.orcamento.Orcamento;
  * Representa uma regra da cadeia 
  * Esta em especifico delimita o fim da cadeia
  */
-public class SemDesconto extends Desconto {
+public class FimDescontos extends Desconto {
 
-	public SemDesconto() {
+	public FimDescontos() {
 		super(null);		
 	}
 
@@ -23,8 +21,8 @@ public class SemDesconto extends Desconto {
 	}
 
 	@Override
-	public BigDecimal efetuarCalculo(Orcamento orcamento) {
-		return BigDecimal.ZERO;
+	public void aplicarDesconto(Orcamento orcamento) {
+		
 	}
 
 }

@@ -12,17 +12,20 @@ import br.com.padroes.comportamentais.strategy.loja.orcamento.Orcamento;
  */
 public class DescontoComValorMaiorQuinhentos extends Desconto {
 
+	private static final  BigDecimal TRES_POR_CENTO = BigDecimal.valueOf(3);
+	
 	public DescontoComValorMaiorQuinhentos(Desconto proximo) {
 		super(proximo);
 	}
 
 	@Override
 	public boolean atendeRegraDesconto(Orcamento orcamento) {
-		return orcamento.getValor().compareTo(new BigDecimal("500")) > 0;
+		return orcamento.getValor().compareTo(BigDecimal.valueOf(500)) > 0;
 	}
 
 	@Override
-	public BigDecimal efetuarCalculo(Orcamento orcamento) {
-		return orcamento.getValor().multiply(new BigDecimal("0.05"));
+	public void aplicarDesconto(Orcamento orcamento) {
+		BigDecimal valorDesconto = orcamento.getValor().divide(BigDecimal.valueOf(100)).multiply(TRES_POR_CENTO);
+		orcamento.acumularDesconto(valorDesconto);
 	}
 }

@@ -1,7 +1,5 @@
 package br.com.padroes.comportamentais.chainofresponsabilty.desconto;
 
-import java.math.BigDecimal;
-
 import br.com.padroes.comportamentais.strategy.loja.orcamento.Orcamento;
 
 /**
@@ -15,29 +13,31 @@ public abstract class Desconto {
 	/**
 	 * protected para ser acessado pelas classes filhas
 	 */
-	protected  Desconto proximo;
+	protected Desconto proximo;
 
-	public Desconto(Desconto proximoDesconto) {
+	protected Desconto(Desconto proximoDesconto) {
 		this.proximo = proximoDesconto;
 	}
- 
-	/** 
-	 * Template Method 
-	 * Criação de um método concreto na classe “mãe”, que chama métodos abstratos implementados nas classes “filhas”
-	 * O padrão Template Method favorece o reaproveitamento de códigos comuns entre classes, evitando assim duplicações de códigos.
+
+	/**
+	 * Template Method Criacao de um metodo concreto na classe mae, que chama
+	 * metodos abstratos implementados nas classes filhas O padrao Template Method
+	 * favorece o reaproveitamento de codigos comuns entre classes, evitando assim
+	 * duplicacoes de codigos.
+	 * 
 	 * @param orcamento
-	 * @return 
+	 * @return
 	 */
-	protected  BigDecimal calcular(Orcamento orcamento) {
-		
-		if(atendeRegraDesconto(orcamento)) {
-			return efetuarCalculo(orcamento);
+	protected void calcular(Orcamento orcamento) {
+		if (atendeRegraDesconto(orcamento)) {
+			aplicarDesconto(orcamento);
 		}
-		
-		return proximo.calcular(orcamento);
+		if(proximo != null) {
+			proximo.calcular(orcamento);
+		}
 	}
-	
+
 	public abstract boolean atendeRegraDesconto(Orcamento orcamento);
-	
-	public abstract BigDecimal efetuarCalculo(Orcamento orcamento);
+
+	public abstract void aplicarDesconto(Orcamento orcamento);
 }

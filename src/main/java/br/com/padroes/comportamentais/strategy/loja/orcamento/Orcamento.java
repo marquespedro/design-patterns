@@ -10,7 +10,8 @@ public class Orcamento {
 	private BigDecimal valor;
 	private int quantidadeItens;
 	private SituacaoOrcamento situacao;
-
+	private BigDecimal descontoAcumulado;
+	
 	public Orcamento(BigDecimal valor, int quantidadeItens) {
 		this.valor = valor;
 		this.quantidadeItens = quantidadeItens;
@@ -63,4 +64,18 @@ public class Orcamento {
 		this.situacao.finalizar(this);
 	}
 
+	public void acumularDesconto(BigDecimal valor) {
+		if(this.descontoAcumulado == null) {
+			this.descontoAcumulado = valor;
+			return;
+		}
+		this.descontoAcumulado = this.descontoAcumulado.add(valor);
+	}
+
+	public BigDecimal getDescontoAcumulado() {
+		return descontoAcumulado;
+	}
+	
+
+	
 }
